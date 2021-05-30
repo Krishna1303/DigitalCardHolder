@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Card Name"
+        android:id="@+id/id_card_name_entry"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Card Number"
+        android:maxLength="16"
+        android:inputType="number"
+        android:id="@+id/id_card_number_entry"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Card Holder Name"
+        android:id="@+id/id_card_holder_name_entry"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Card Exipry in MM/YY format"
+        android:id="@+id/id_card_expiry_entry"
+        android:maxLength="5"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Card CVV"
+        android:inputType="numberPassword"
+        android:maxLength="3"
+        android:id="@+id/id_card_cvv_entry"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:layout_alignParentRight="true"
+            android:layout_margin="20dp"
+            android:id="@+id/id_btn_ok_entry"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CANCEL"
+            android:layout_toLeftOf="@id/id_btn_ok_entry"
+            android:layout_margin="20dp"
+            android:id="@+id/id_btn_cancel_entry"
+            />
+    </RelativeLayout>
+</LinearLayout>
